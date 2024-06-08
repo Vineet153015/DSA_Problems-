@@ -1,3 +1,7 @@
+// Remove the Duplicate in a String 
+// (Condition - only small letters from a- z)
+
+
 public class Duplicate {
     
     public static void removeDuplicate(String str, int idx, StringBuilder newStr, boolean map[]){
