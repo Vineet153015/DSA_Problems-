@@ -2,7 +2,7 @@
 // (A tile can either be placed horizontally or vertically)
 
 
-package ReccuresionPart1;
+
 
 public class tilingproblem {
     
@@ -13,17 +13,21 @@ public class tilingproblem {
             return 1;
     }
 
-    // vertical choice
-    int verticalTile = tilingproblem(n-1);
+    // // vertical choice
+    // int verticalTile = tilingproblem(n-1);
 
-    // horizontal choice
-    int horizontalTile = tilingproblem(n-2);
+    // // horizontal choice
+    // int horizontalTile = tilingproblem(n-2);
 
-    int totalways = verticalTile + horizontalTile;
-    return totalways;
+    // int totalways = verticalTile + horizontalTile;
+    // return totalways;
+
+
+    // optimised case 
+    return tilingproblem(n-1) + tilingproblem(n-2);
     }
 
     public static void main(String[] args) {
-        System.out.println(tilingproblem(6));
+        System.out.println(tilingproblem(3));
     }
 }
